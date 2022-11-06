@@ -1,8 +1,20 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
+import auth from "../../firebase/firebase.init";
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+
 
 const Register = () => {
+
+
+  const [
+    createUserWithEmailAndPassword,
+    user,
+    loading,
+    error,
+  ] = useCreateUserWithEmailAndPassword(auth);
+
   const {
     register,
     handleSubmit,
@@ -11,7 +23,13 @@ const Register = () => {
 
   const onSubmit = data => {
     console.log(data);
+    createUserWithEmailAndPassword(data.email, data.password)
+    console.log('=================');
   };
+
+  if(user){
+    console.log(user,'firebase');
+  }
 
   return (
     <div className="flex h-auto  justify-center items-center">

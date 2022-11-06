@@ -11,6 +11,7 @@ const Login = () => {
 
   const onSubmit = data => {
     console.log(data);
+    console.log('=================');
   };
 
   return (
