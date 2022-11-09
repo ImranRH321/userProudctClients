@@ -27,11 +27,11 @@ const ProductDetails = () => {
           </figure>
           <div className="card-body ">
             <h2 className="card-title">{oneProduct?.name}</h2>
-            <p>Price: {oneProduct?.price}</p>
-            <p>Quantity: {oneProduct?.quantity}</p>
-            <p>ratings: {oneProduct?.ratings}</p>
-            <p>seller: {oneProduct?.seller}</p>
-            <p>stock: {oneProduct?.stock}</p>
+            <p>Price: <span>{oneProduct?.price}</span> </p>
+            <p>Quantity: <span>{oneProduct?.quantity}</span> </p>
+            <p>ratings: <span>{oneProduct?.ratings}</span> </p>
+            <p>seller: <span>{oneProduct?.seller}</span> </p>
+            <p>stock: <span>{oneProduct?.stock}</span> </p>
 
             <div className="card-actions justify-end">
               <button className="btn btn-primary">Listen</button>

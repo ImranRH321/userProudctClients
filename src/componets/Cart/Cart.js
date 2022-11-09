@@ -1,7 +1,9 @@
 import React from "react";
 import { useContext } from "react";
+import { json } from "react-router-dom";
 import { MyContext } from "../../App";
 import AddCartProduct from "../AddCartProduct/AddCartProduct";
+import OrderSumary from "../OrderSumary/OrderSumary";
 
 const Cart = () => {
   const [cart, setCart] = useContext(MyContext);
@@ -15,16 +17,7 @@ const Cart = () => {
         ))}
       </div>
       <div className="order_summary border">
-        <h2>Cart {cart.length}</h2>
-        <div className="card w-96 bg-base-100 shadow-xl">
-          <div className="card-body">
-            <h2 className="card-title">Card title!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div className="card-actions justify-end">
-              <button className="btn btn-primary">Buy Now</button>
-            </div>
-          </div>
-        </div>
+         <OrderSumary cart={cart}></OrderSumary>
       </div>
     </div>
   );

@@ -9,6 +9,7 @@ import Products from './componets/Products/Products';
 import ProductDetails from './componets/ProductDetails/ProductDetails';
 import React, { useState } from 'react';
 import Cart from './componets/Cart/Cart';
+import Footer from './componets/shared/Footer';
 
 export const MyContext  = React.createContext()
 
@@ -30,6 +31,7 @@ function App() {
         <Route path='cart' element={<Cart/>}></Route>
         <Route path='productId/:singleId' element={<ProductDetails/>}></Route>
        </Routes>
+       <Footer></Footer>
        </MyContext.Provider>
     </div>
   );
