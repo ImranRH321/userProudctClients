@@ -8,7 +8,7 @@ import OrderSumary from "../OrderSumary/OrderSumary";
 const Cart = () => {
   const [cart, setCart] = useContext(MyContext);
   //   48-9 start Ema-john module
-
+ console.log(cart,'cart');
   return (
     <div className="grid md:grid-cols-2">
       <div className="cart_container border">

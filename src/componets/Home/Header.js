@@ -5,7 +5,7 @@ import { MyContext } from "../../App";
 const Header = () => {
   const [cart] = useContext(MyContext)
 
-  console.log(cart);
+  console.log(cart,'header');
 
   return (
     <div className="navbar bg-base-100 px-5">

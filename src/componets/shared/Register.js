@@ -22,9 +22,9 @@ const Register = () => {
   } = useForm();
 
   const onSubmit = data => {
-    console.log(data);
+    // console.log(data);
     createUserWithEmailAndPassword(data.email, data.password)
-    console.log('=================');
+    // console.log('=================');
   };
 
   if(user){

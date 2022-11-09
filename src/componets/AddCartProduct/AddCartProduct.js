@@ -1,22 +1,33 @@
-import React from "react";
+import React, { useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMinus, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+import { MyContext } from "../../App";
 
 const AddCartProduct = ({ pd }) => {
-  const [number, setNumber] = useState(1);
-  const [addPrice, setAddPrice] = useState(pd.price);
+  const [cart, setCart] = useContext(MyContext);
+  // const [number, setNumber] = useState(1);
+  // const [addPrice, setAddPrice] = useState();
 
-  const handlePlus = () => {
-    const newNumber = number + 1;
-    setNumber(newNumber);
-    setAddPrice(number * pd.price)
-  };
-  const handleMinus = () => {
-    const newNumber = number - 1;
-    setNumber(newNumber);
-    setAddPrice(number - pd.price)
-  };
+  // const handlePlus = () => {
+  //   const newNumber = number + 1;
+  //   setNumber(newNumber);
+  //   setAddPrice(number * pd.price)
+  // };
+  // const handleMinus = () => {
+  //   const newNumber = number - 1;
+  //   setNumber(newNumber);
+  //   setAddPrice(number - pd.price)
+  // };
+
+      
+  if(cart){
+    const newData = cart.filter(el => el._id == pd._id) 
+    // console.log(newData, 'addtocart');
+  }else{
+    const newData = cart.filter(el => el._id !== pd._id) 
+    // console.log(newData, 'addtocart');
+  }
 
   return (
     <div className="flex shadow-xl">

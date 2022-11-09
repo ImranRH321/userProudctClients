@@ -4,7 +4,7 @@ const useProducts = (singleId) => {
   const [products, setProduct] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  console.log(singleId);
+  // console.log(singleId);
   
   useEffect(() => {
     fetch("http://localhost:5000/products")
