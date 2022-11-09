@@ -9,7 +9,7 @@ import Products from './componets/Products/Products';
 import ProductDetails from './componets/ProductDetails/ProductDetails';
 import React, { useState } from 'react';
 import Cart from './componets/Cart/Cart';
-import Footer from './componets/shared/Footer';
+import NotFound from './componets/NotFound/NotFound';
 
 export const MyContext  = React.createContext()
 
@@ -30,8 +30,9 @@ function App() {
         <Route path='product' element={<Products/>}></Route>
         <Route path='cart' element={<Cart/>}></Route>
         <Route path='productId/:singleId' element={<ProductDetails/>}></Route>
+        <Route path='*' element={<NotFound/>}></Route>
+
        </Routes>
-       <Footer></Footer>
        </MyContext.Provider>
     </div>
   );

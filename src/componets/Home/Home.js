@@ -12,6 +12,7 @@ const Home = () => {
             {/* card  */}
             {/* form  */}
             {/* footer  */}
+            {/* <Footer></Footer> */}
         </div>
     );
 };
