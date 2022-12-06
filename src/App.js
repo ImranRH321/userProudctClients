@@ -1,39 +1,24 @@
-
-import { Route, Routes } from 'react-router-dom';
-import './App.css';
-import Home from './componets/Home/Home';
-import Login from './componets/shared/Login';
-import Register from './componets/shared/Register';
-import Header from './componets/Home/Header'
-import Products from './componets/Products/Products';
-import ProductDetails from './componets/ProductDetails/ProductDetails';
-import React, { useState } from 'react';
-import Cart from './componets/Cart/Cart';
-import NotFound from './componets/NotFound/NotFound';
-
-export const MyContext  = React.createContext()
-
-
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import Home from "./componets/Home/Home";
+import Login from "./componets/shared/Login";
+import Register from "./componets/shared/Register";
+import Header from "./componets/Home/Header";
+import NotFound from "./componets/NotFound/NotFound";
+import About from "./componets/About/About";
 
 function App() {
-  
-  const [cart, setCart] = useState([])
-
   return (
     <div className="App">
-      <MyContext.Provider value={[cart, setCart]}>
-      <Header/>
-       <Routes>
-        <Route path='/' element={<Home/>}></Route>
-        <Route path='login' element={<Login/>}></Route>
-        <Route path='register' element={<Register/>}></Route>
-        <Route path='product' element={<Products/>}></Route>
-        <Route path='cart' element={<Cart/>}></Route>
-        <Route path='productId/:singleId' element={<ProductDetails/>}></Route>
-        <Route path='*' element={<NotFound/>}></Route>
-
-       </Routes>
-       </MyContext.Provider>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/home" element={<Home />}></Route>
+        <Route path="/about" element={<About/>}></Route>
+        <Route path="login" element={<Login />}></Route>
+        <Route path="register" element={<Register />}></Route>
+        <Route path="*" element={<NotFound />}></Route>
+      </Routes>
     </div>
   );
 }
