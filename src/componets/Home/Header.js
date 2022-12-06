@@ -1,8 +1,19 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
   const [open, setOpen] = useState(true);
+  const Location = useLocation()
+  console.log(Location); 
+  console.log(window.innerWidth); 
+
+  useEffect(()=> {
+ if(window.innerWidth <= 767 ){
+   setOpen(!open)
+ }
+//  window  resize
+  },[Location])
 
   return (
     <header>
@@ -22,9 +33,10 @@ const Header = () => {
               className="text-3xl cursor-pointer mx-2 md:hidden block"
             >
               {open ? (
+                  <ion-icon name="close"></ion-icon>
+                ) : (
+             
                 <ion-icon name="menu" onClick={() => setOpen(false)}></ion-icon>
-              ) : (
-                <ion-icon name="close"></ion-icon>
               )}
             </span>
           </div>
@@ -39,6 +51,14 @@ const Header = () => {
                 className="text-xl hover:text-cyan-400 duration-500"
               >
                 HOme
+              </Link>
+            </li>
+            <li className="mx-4 my-5 md:my-0">
+              <Link
+                to="/product"
+                className="text-xl hover:text-cyan-400 duration-500"
+              >
+               Products
               </Link>
             </li>
             <li className="mx-4 my-5 md:my-0">
@@ -59,6 +79,8 @@ const Header = () => {
                 Blogs
               </a>
             </li>
+         
+
             <li className="mx-4 my-5 md:my-0">
               <a href="#" className="text-xl hover:text-cyan-400 duration-500">
                 product
