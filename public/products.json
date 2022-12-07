@@ -1,6 +1,5 @@
 [
   {
-    "id": 1,
     "name": "BOYA MM1 Pro Microphone",
     "img": " https://i.ibb.co/s11YhCH/1.webp",
     "price": " 3,600",
@@ -9,7 +8,6 @@
     "description": "The BOYA MM1 Pro Microphone Is A compact, Entry-Level Wireless Lavalier Microphone System Offering An Easy-To-Use, Cost-Effective, And All-Inclusive Solution For Recording One Subject To Your IOS Mobile Device. The System Delivers Improved Sound Quality Over The Built-In Mics On Cameras And Mobile Devices To Supply Clear, Intelligible Speech For, Super-Clear Recording Sound ."
   },
   {
-    "id": 2,
     "name": "DSLR Camera, Nikon",
     "img": " https://i.ibb.co/1M8FmDk/2.webp",
     "price": "299,000",
@@ -18,7 +16,6 @@
     "description": "The Nikon Z6 mark Il with lens 24-120mm sits below the Z7 II as the flagship multimedia’ model in the Z-series mirrorless lineup. Offering a 24MP full-frame sensor, in-body 5-axis stabilization and high-quality 4K video shooting, the Z6 II provides a similar feature set to its predecessor, but with some differences. Improvements include (and mostly stem from) the addition of a second Expeed 6 image processor, which allows for faster continuous shooting (now up to 14 fps) improved autofocus and 4K/60p video from an APS-C crop (coming via firmware).."
   },
   {
-    "id": 3,
     "name": "DJI-Air-2S-combo Drone",
     "img": "https://i.ibb.co/BP11V5Q/3.webp",
     "price": "142,000",
@@ -27,7 +24,6 @@
     "description": "The compact and foldable design of the DJI-Air-2S-combo Drone lets you easily capture breathtaking aerial images and video whenever the mood strikes. It’s an ideal alternative for use when travelling on vacation or for photography enthusiasts looking to record from new and unique perspectives.Piloting is made to be easy and intuitive via your smartphone and the DJI Fly app. Simply slip your phone into the included remote controller. Thanks to the Air 2S’s 3-axis gimbal, four remote antennae, and OcuSync 3.0 technology, you can receive a stable, live view from the drone up to 7.5 miles away."
   },
   {
-    "id": 4,
     "name": "Action-camera-GoPro-hero-11 black",
     "SKU": "AC-001",
     "img": "https://i.ibb.co/dQ3gzQM/4.webp",
@@ -37,7 +33,6 @@
     "description": "GoPro has announced its new Action-camera-GoPro-hero-11 black, which has a larger sensor than its predecessor, capable of shooting at up to an 8:7 aspect ratio at 5.3K, “the largest vertical field of view ever on a GoPro,” according to the company.It also lets you shoot even wider in the more common 16:9 aspect ratio in a mode called “HyperView.” GoPro says HyperView will make action look even faster, which will hopefully help capture how epic / scary a downhill descent or big wave ride really was."
   },
   {
-    "id": 5,
     "name": "Akaso Brave 7 LE 4K30FPS 20MP WiFi Action Camera",
     "SKU": "AC-006",
     "img": "https://i.ibb.co/MNd9RYc/5.webp",
@@ -47,7 +42,6 @@
     "description": "Key Features Model: Brave 7 Dual color screens: 1.2″ front screen + 2″ touch screen 4K 30FPS video and 20MP photo Six-axis image stabilization (EIS 2.0) IPX8 waterproof, voice control & Smart remote control"
   },
   {
-    "id": 6,
     "name": "CHEERLUX C10 WiFi ATV – Projector 720P 2600 Lumens – Support 1080P",
     "SKU": "AC-006",
     "img": "https://i.ibb.co/3WtXMGL/7.jpg",

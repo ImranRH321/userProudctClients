@@ -5,8 +5,6 @@ import { Link, useLocation } from "react-router-dom";
 const Header = () => {
   const [open, setOpen] = useState(true);
   const Location = useLocation()
-  console.log(Location); 
-  console.log(window.innerWidth); 
 
   useEffect(()=> {
  if(window.innerWidth <= 767 ){

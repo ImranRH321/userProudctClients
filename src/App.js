@@ -7,6 +7,7 @@ import Header from "./componets/Home/Header";
 import NotFound from "./componets/NotFound/NotFound";
 import About from "./componets/About/About";
 import Products from "./componets/Products/Products/Products";
+import ProductDetails from "./componets/Products/ProductDetails/ProductDetails";
 
 function App() {
 
@@ -29,6 +30,7 @@ https://i.ibb.co/K0tV8fY/10.webp
         <Route path="/" element={<Home />}></Route>
         <Route path="/home" element={<Home />}></Route>
         <Route path="/product" element={<Products/>}></Route>
+        <Route path="/productDetails/:id" element={<ProductDetails/>}></Route>
         <Route path="/about" element={<About/>}></Route>
         <Route path="login" element={<Login />}></Route>
         <Route path="register" element={<Register />}></Route>
